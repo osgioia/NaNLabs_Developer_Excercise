@@ -1,0 +1,65 @@
+Get board
+https://api.trello.com/1/boards/5f9cdc15d9f452750c3cf519?key=8ab9f45299b63fa15ddec327e9aec24c&token=ef5e57d38c4b815c4ce2e22495aa9f66494f46514815c912b7d7700141e8890a
+
+Get Lists
+https://api.trello.com/1/boards/5f9cdc15d9f452750c3cf519/lists?key=8ab9f45299b63fa15ddec327e9aec24c&token=ef5e57d38c4b815c4ce2e22495aa9f66494f46514815c912b7d7700141e8890a
+
+Create Card in List TODO 
+https://api.trello.com/1/cards?name=Learn%20Postman&idList=5f9d787ff046818e66fe1434&key=8ab9f45299b63fa15ddec327e9aec24c&token=ef5e57d38c4b815c4ce2e22495aa9f66494f46514815c912b7d7700141e8890a
+
+
+Create Card with Labels
+https://api.trello.com/1/cards?name=Arreglar la canilla de la cocina&desc=Pierde la canilla de agua caliente&idList=5f9d787ff046818e66fe1434&key=8ab9f45299b63fa15ddec327e9aec24c&token=ef5e57d38c4b815c4ce2e22495aa9f66494f46514815c912b7d7700141e8890a&idLabels=5f9d96981375a91777c7a805
+
+
+Create Labels
+https://api.trello.com/1/labels?key=8ab9f45299b63fa15ddec327e9aec24c&token=ef5e57d38c4b815c4ce2e22495aa9f66494f46514815c912b7d7700141e8890a&name=Task&color=blue&idBoard=5f9cdc15d9f452750c3cf519
+
+Labels
+{
+    "id": "5f9d96981375a91777c7a805",
+    "idBoard": "5f9cdc15d9f452750c3cf519",
+    "name": "Bug",
+    "color": "red",
+    "limits": {}
+}
+
+{
+    "id": "5f9d96f3e639526289c200f0",
+    "idBoard": "5f9cdc15d9f452750c3cf519",
+    "name": "Issue",
+    "color": "yellow",
+    "limits": {}
+}
+
+{
+    "id": "5f9d91c537f8cb1135ff1f19",
+    "idBoard": "5f9cdc15d9f452750c3cf519",
+    "name": "Task",
+    "color": "blue",
+    "limits": {}
+}
+
+{
+    "id": "5f9de634bdf2d62bdb821954",
+    "idBoard": "5f9cdc15d9f452750c3cf519",
+    "name": "Maintenance",
+    "color": "purple",
+    "limits": {}
+}
+
+{
+    "id": "5f9de67e266a62172177ac90",
+    "idBoard": "5f9cdc15d9f452750c3cf519",
+    "name": "Research",
+    "color": "green",
+    "limits": {}
+}
+
+{
+    "id": "5f9de69ff3a6a00e8d9edebd",
+    "idBoard": "5f9cdc15d9f452750c3cf519",
+    "name": "Test",
+    "color": "sky",
+    "limits": {}
+}

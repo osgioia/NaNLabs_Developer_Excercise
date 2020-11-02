@@ -1,0 +1,116 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "description": "The space-x team is designing their next launch to the international space station.",
+      "version": "1.0.0",
+      "title": "Space-X Team",
+      "contact": {
+        "email": "os.gioia@gmail.com"
+      },
+      "license": {
+        "name": "Apache 2.0",
+        "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+      }
+    },
+    "host": "localhost:3000",
+    "basePath": "/",
+    "tags": [
+      {
+        "name": "/",
+        "description": "Create a Task",
+        "externalDocs": {
+          "description": "Find out more",
+          "url": "http://localhost:3000"
+        }
+      }
+    ],
+    "schemes": [
+      "http"
+    ],
+    "paths": {
+      "/": {
+        "post": {
+          "tags": [
+            "/"
+          ],
+          "summary": "Add Card as new Task",
+          "description": "",
+          "operationId": "addPet",
+          "consumes": [
+            "application/json"
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "description": "Add task in cards",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/Task"
+              }
+            }
+          ],
+          "responses": {
+            "405": {
+              "description": "Wrong Parameters."
+            },
+            "200": {
+                "description": "Ok."
+              }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Task": {
+        "type": "object",
+        "required": [
+          "name",
+          "photoUrls"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "type of card",
+            "enum": [
+              "issue",
+              "bug",
+              "task"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "example": "title of task"
+          },
+          "description": {
+            "type": "string",
+            "example": "description of task"
+          },
+          "category": {
+            "type": "string",
+            "description": "type of task",
+            "enum": [
+              "Maintenance",
+              "Research",
+              "Test"
+            ]
+          }
+        }
+      },
+      "ApiResponse": {
+        "type": "object",
+        "properties": {
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "externalDocs": {
+      "description": "Find out more about Swagger",
+      "url": "http://swagger.io"
+    }
+  }
